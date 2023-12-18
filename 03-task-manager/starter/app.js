@@ -3,6 +3,8 @@ const app = express();
 const tasks = require('./routes/tasks')
 
 
+app.use(express.json())
+
 app.get('/hello', (req, res) => {
     res.send('foi');
 })
